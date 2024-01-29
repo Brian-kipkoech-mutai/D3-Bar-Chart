@@ -1,0 +1,63 @@
+ .ui{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }  
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 60%;
+     height: 90vh;
+     background-color: #eaeaea;
+     border-radius: 5px;
+     
+    
+    
+    
+}
+
+
+.title{
+    font-size: 2rem;
+    
+     
+}
+.bar:hover{
+    fill: aliceblue;
+}
+ 
+  #tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Add a background color with transparency */
+    color: white; /* Set text color to white for better contrast */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    padding: 8px; /* Add some padding */
+    width: 200px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; /* Add a transition for opacity */
+    font-size: 20px;
+    line-height: 1.5
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .bar {
+      stroke-width: 2;
+    }
+  
+    #tooltip {
+      width: 150px;
+    }
+    .mainbox{
+      width: 100%;
+    }
+  }
